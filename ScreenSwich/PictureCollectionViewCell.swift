@@ -14,5 +14,13 @@ class PictureCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+//        NSLog("--ewewweweweewewewew23233232ew->%@", self)
+    }
+    
+    func initData(index:Int){
+//        NSLog("---------------------initData--------------------->%d",index)
+    }
 
 }

@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PictureCollectionViewCell" customModule="ScreenSwich" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="PictureCollectionViewCell" id="gTV-IL-0wX" customClass="PictureCollectionViewCell" customModule="ScreenSwich" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <subviews>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="p1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z5z-KC-o5q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    </imageView>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" red="0.0039215688589999999" green="0.52941179279999995" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="Z5z-KC-o5q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2rh-Y8-2ci"/>
+                <constraint firstAttribute="bottom" secondItem="Z5z-KC-o5q" secondAttribute="bottom" id="FMZ-iN-2Nl"/>
+                <constraint firstAttribute="trailing" secondItem="Z5z-KC-o5q" secondAttribute="trailing" id="Ffz-1f-5LZ"/>
+                <constraint firstItem="Z5z-KC-o5q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="edy-Za-2Yn"/>
+            </constraints>
+            <size key="customSize" width="145" height="240"/>
+            <point key="canvasLocation" x="347.5" y="361"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="p1.png" width="912" height="912"/>
+    </resources>
 </document>
